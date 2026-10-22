@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VyxAntix ERP modules — Finance, Inventory, Sales, Purchase, Manufacturing &amp; Payroll</title>
+  <meta name="description" content="Six connected modules on one database, with GST e-invoicing, multi-branch support and a mobile app." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/logo-mark-color.svg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/mockups.css" />
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="navbar-brand" aria-label="VyxAntix Home">
+        <img src="/assets/logo-horizontal-on-light.svg" alt="VyxAntix" class="navbar-logo-img" width="188" height="47" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="navbar-nav">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/product.html" class="nav-link active">Product</a></li>
+          <li><a href="/pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="navbar-actions">
+        <a href="/contact.html" class="btn btn-primary btn-sm">
+          Start free trial
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li><a href="/product.html" class="mobile-nav-link active">Product</a></li>
+      <li><a href="/pricing.html" class="mobile-nav-link">Pricing</a></li>
+      <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-actions">
+      <a href="/contact.html" class="btn btn-primary btn-full">
+        Start free trial
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-eyebrow">PRODUCT</span>
+        <h1 class="page-hero-title">
+          Every module your business needs.<br>
+          <span class="text-cobalt">Connected from day one.</span>
+        </h1>
+        <p class="page-hero-sub">
+          Each VyxAntix module is powerful on its own. Together they share one database, one set of masters and one login — so nothing is entered twice and every report is live.
+        </p>
+
+        <!-- Jump Pills Bar -->
+        <div class="jump-pills-bar">
+          <a href="#finance" class="jump-pill">
+            <img src="/assets/icon-finance.svg" alt="Finance" width="16" height="16" />
+            <span>Finance</span>
+          </a>
+          <a href="#inventory" class="jump-pill">
+            <img src="/assets/icon-inventory.svg" alt="Inventory" width="16" height="16" />
+            <span>Inventory</span>
+          </a>
+          <a href="#sales" class="jump-pill">
+            <img src="/assets/icon-sales.svg" alt="Sales" width="16" height="16" />
+            <span>Sales &amp; CRM</span>
+          </a>
+          <a href="#purchase" class="jump-pill">
+            <img src="/assets/icon-procurement.svg" alt="Purchase" width="16" height="16" />
+            <span>Purchase</span>
+          </a>
+          <a href="#manufacturing" class="jump-pill">
+            <img src="/assets/icon-manufacturing.svg" alt="Manufacturing" width="16" height="16" />
+            <span>Manufacturing</span>
+          </a>
+          <a href="#hr-payroll" class="jump-pill">
+            <img src="/assets/icon-people.svg" alt="HR" width="16" height="16" />
+            <span>HR &amp; Payroll</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep-Dive Modules Section -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <!-- Module 1: Finance & Accounting -->
+        <div class="product-module-row" id="finance">
+          <div class="product-row-copy">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <img src="/assets/icon-finance.svg" alt="Finance" width="20" height="20" />
+              <span class="section-eyebrow" style="margin-bottom: 0;">FINANCE &amp; ACCOUNTING</span>
+            </div>
+            <h2 class="product-row-title">Books that close themselves.</h2>
+            <p class="product-row-desc">
+              Every sale, purchase and payment posts to the ledger automatically. Reconcile bank statements in minutes and see your real P&amp;L on any day of the month.
+            </p>
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-company and multi-branch accounting</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automatic GST, TDS and TCS postings</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bank reconciliation with smart matching</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Receivables ageing and payment reminders</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Profit & Loss Card Mockup -->
+          <div class="product-ui-card">
+            <div class="product-ui-header">
+              <div class="product-ui-title-wrap">
+                <img src="/assets/icon-finance.svg" alt="P&L" width="18" height="18" />
+                <span class="product-ui-title">Profit &amp; loss · October 2026</span>
+              </div>
+              <span class="badge badge-green">Live</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="pnl-table">
+                <thead>
+                  <tr style="border-bottom: 1px solid var(--line);">
+                    <th style="font-family: var(--font-mono); font-size: 10px; color: var(--faint); text-transform: uppercase; padding: 6px 0; text-align: left;">ACCOUNT</th>
+                    <th style="font-family: var(--font-mono); font-size: 10px; color: var(--faint); text-transform: uppercase; padding: 6px 0; text-align: right;">AMOUNT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Revenue from operations</td>
+                    <td style="text-align: right; font-family: var(--font-mono); font-weight: 600;">₹48,62,400</td>
+                  </tr>
+                  <tr>
+                    <td>Cost of goods sold</td>
+                    <td style="text-align: right; font-family: var(--font-mono); font-weight: 600;">₹29,17,440</td>
+                  </tr>
+                  <tr class="pnl-bold">
+                    <td>Gross profit · 40.0%</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹19,44,960</td>
+                  </tr>
+                  <tr>
+                    <td>Operating expenses</td>
+                    <td style="text-align: right; font-family: var(--font-mono); font-weight: 600;">₹8,12,300</td>
+                  </tr>
+                  <tr class="pnl-profit">
+                    <td>Net profit · 23.3%</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹11,32,660</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pnl-bank-status">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="var(--green)"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Bank reconciliation · current account — 142 of 146 entries auto-matched</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2: Inventory & Warehouse (Reversed) -->
+        <div class="product-module-row reversed" id="inventory">
+          <div class="product-row-copy">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <img src="/assets/icon-inventory.svg" alt="Inventory" width="20" height="20" />
+              <span class="section-eyebrow" style="margin-bottom: 0;">INVENTORY &amp; WAREHOUSE</span>
+            </div>
+            <h2 class="product-row-title">Know exactly what you have — and where.</h2>
+            <p class="product-row-desc">
+              Real-time stock across every warehouse and branch, with batch, serial and expiry tracking that keeps audits painless.
+            </p>
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multiple warehouses and bin locations</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Batch, serial number and expiry tracking</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Reorder levels with automatic alerts</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Barcode scanning on the mobile app</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Stock Summary Card Mockup -->
+          <div class="product-ui-card">
+            <div class="product-ui-header">
+              <div class="product-ui-title-wrap">
+                <img src="/assets/icon-inventory.svg" alt="Stock" width="18" height="18" />
+                <span class="product-ui-title">Stock summary · all warehouses</span>
+              </div>
+              <span class="badge badge-cobalt">3 warehouses</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="stock-table">
+                <thead>
+                  <tr>
+                    <th>ITEM</th>
+                    <th>WAREHOUSE</th>
+                    <th style="text-align: right;">QTY / STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="font-weight: 600;">MS Bolt M8×40</td>
+                    <td style="color: var(--muted);">Bengaluru</td>
+                    <td style="text-align: right;">
+                      <span style="font-family: var(--font-mono); margin-right: 6px;">120</span>
+                      <span class="badge badge-amber" style="font-size: 9.5px; padding: 2px 6px;">Reorder</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: 600;">Copper wire 2.5 mm</td>
+                    <td style="color: var(--muted);">Hosur</td>
+                    <td style="text-align: right;">
+                      <span style="font-family: var(--font-mono); margin-right: 6px;">3,400 m</span>
+                      <span class="badge badge-green" style="font-size: 9.5px; padding: 2px 6px;">In stock</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: 600;">Packaging carton (L)</td>
+                    <td style="color: var(--muted);">Bengaluru</td>
+                    <td style="text-align: right;">
+                      <span style="font-family: var(--font-mono); margin-right: 6px;">860</span>
+                      <span class="badge badge-green" style="font-size: 9.5px; padding: 2px 6px;">In stock</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: 600;">PVC granules · B-1042</td>
+                    <td style="color: var(--muted);">Hosur</td>
+                    <td style="text-align: right;">
+                      <span style="font-family: var(--font-mono); margin-right: 6px;">1.2 t</span>
+                      <span class="badge badge-amber" style="font-size: 9.5px; padding: 2px 6px;">Expires 12 Nov</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: 600;">Control panel CP-200</td>
+                    <td style="color: var(--muted);">Pune</td>
+                    <td style="text-align: right;">
+                      <span style="font-family: var(--font-mono); margin-right: 6px;">36</span>
+                      <span class="badge badge-green" style="font-size: 9.5px; padding: 2px 6px;">In stock</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 3: Sales & CRM -->
+        <div class="product-module-row" id="sales">
+          <div class="product-row-copy">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <img src="/assets/icon-sales.svg" alt="Sales" width="20" height="20" />
+              <span class="section-eyebrow" style="margin-bottom: 0;">SALES &amp; CRM</span>
+            </div>
+            <h2 class="product-row-title">From first enquiry to final payment.</h2>
+            <p class="product-row-desc">
+              Track leads, send quotations, convert them to orders and GST invoices, and collect payment through UPI links — all in one flow.
+            </p>
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lead and deal pipeline</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Quotations, sales orders and delivery challans</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>E-invoices and e-way bills in one click</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Invoices on WhatsApp and email with a payment link</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Deal Pipeline Kanban Card -->
+          <div class="product-ui-card">
+            <div class="product-ui-header">
+              <div class="product-ui-title-wrap">
+                <img src="/assets/icon-sales.svg" alt="Pipeline" width="18" height="18" />
+                <span class="product-ui-title">Deal pipeline · this quarter</span>
+              </div>
+              <span class="badge badge-cobalt">₹41.05 L open</span>
+            </div>
+
+            <div class="kanban-grid">
+              <div class="kanban-col">
+                <span class="kanban-col-title">● Lead</span>
+                <div class="kanban-item-card">
+                  <span class="kanban-company">Annapurna Mills</span>
+                  <span class="kanban-amount font-mono">₹6,40,000</span>
+                </div>
+                <div class="kanban-item-card">
+                  <span class="kanban-company">Zenith Pharma</span>
+                  <span class="kanban-amount font-mono">₹11,20,000</span>
+                </div>
+              </div>
+
+              <div class="kanban-col">
+                <span class="kanban-col-title">● Quotation sent</span>
+                <div class="kanban-item-card">
+                  <span class="kanban-company">Kaveri Foods</span>
+                  <span class="kanban-amount font-mono">₹4,85,000</span>
+                </div>
+                <div class="kanban-item-card">
+                  <span class="kanban-company">Orion Retail</span>
+                  <span class="kanban-amount font-mono">₹18,60,000</span>
+                </div>
+              </div>
+
+              <div class="kanban-col">
+                <span class="kanban-col-title">● Won</span>
+                <div class="kanban-item-card">
+                  <span class="kanban-company">Nova Textiles</span>
+                  <span class="kanban-amount font-mono">₹2,40,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4: Purchase & Procurement (Reversed) -->
+        <div class="product-module-row reversed" id="purchase">
+          <div class="product-row-copy">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <img src="/assets/icon-procurement.svg" alt="Purchase" width="20" height="20" />
+              <span class="section-eyebrow" style="margin-bottom: 0;">PURCHASE &amp; PROCUREMENT</span>
+            </div>
+            <h2 class="product-row-title">Spend control that doesn’t slow anyone down.</h2>
+            <p class="product-row-desc">
+              Raise requests, route them for approval, issue purchase orders and match vendor bills to what actually arrived.
+            </p>
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Purchase requests with approval rules</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Three-way matching: PO, goods receipt and bill</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Vendor price history and ratings</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Input tax credit reconciliation with GSTR-2B</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Purchase Order Timeline Mockup -->
+          <div class="product-ui-card">
+            <div class="product-ui-header">
+              <div class="product-ui-title-wrap">
+                <img src="/assets/icon-procurement.svg" alt="PO" width="18" height="18" />
+                <span class="product-ui-title">PO-2026-0193 · Supreme Metals</span>
+              </div>
+              <span class="badge badge-cobalt">₹3,48,600</span>
+            </div>
+
+            <div class="po-timeline">
+              <div class="timeline-step">
+                <div class="step-circle done">✓</div>
+                <div class="step-info">
+                  <span class="step-info-title">Purchase request raised</span>
+                  <span class="step-info-sub">Vikram M · Production · 12 Oct</span>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="step-circle done">✓</div>
+                <div class="step-info">
+                  <span class="step-info-title">Approved</span>
+                  <span class="step-info-sub">Rakesh M · Finance · 13 Oct</span>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="step-circle amber">●</div>
+                <div class="step-info">
+                  <span class="step-info-title">Goods received</span>
+                  <span class="step-info-sub">400 of 500 sheets · Hosur · 16 Oct</span>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="step-circle pending"></div>
+                <div class="step-info">
+                  <span class="step-info-title">Bill matched to PO &amp; GRN</span>
+                  <span class="step-info-sub">Waiting for remaining delivery</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pnl-bank-status" style="background: var(--amber-soft); border-color: rgba(255, 176, 32, 0.4);">
+              <span style="color: var(--amber-text); font-weight: 600;">⚠ Bill on hold: received quantity is lower than ordered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 5: Manufacturing -->
+        <div class="product-module-row" id="manufacturing">
+          <div class="product-row-copy">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <img src="/assets/icon-manufacturing.svg" alt="Manufacturing" width="20" height="20" />
+              <span class="section-eyebrow" style="margin-bottom: 0;">MANUFACTURING</span>
+            </div>
+            <h2 class="product-row-title">Plan production with real stock in mind.</h2>
+            <p class="product-row-desc">
+              Multi-level bills of materials, production orders and material planning that check stock before you commit to a delivery date.
+            </p>
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-level BOMs and routings</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Material requirement planning (MRP)</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Job work and subcontracting with challans</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Scrap and yield tracking</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Production Orders Card Mockup -->
+          <div class="product-ui-card">
+            <div class="product-ui-header">
+              <div class="product-ui-title-wrap">
+                <img src="/assets/icon-manufacturing.svg" alt="Production" width="18" height="18" />
+                <span class="product-ui-title">Production orders · Pune plant</span>
+              </div>
+              <span class="badge badge-cobalt">3 active</span>
+            </div>
+
+            <div class="work-orders-list">
+              <div class="wo-card">
+                <div class="wo-header">
+                  <div>
+                    <span class="wo-name">WO-0871 · Control panel CP-200</span>
+                    <span style="font-size: 11px; color: var(--muted); display: block;">40 units · due 24 Oct</span>
+                  </div>
+                  <span class="font-mono text-cobalt" style="font-weight: 700;">75%</span>
+                </div>
+                <div class="wo-progress-bar-wrap">
+                  <div class="wo-progress-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="wo-card">
+                <div class="wo-header">
+                  <div>
+                    <span class="wo-name">WO-0872 · Wiring harness WH-12</span>
+                    <span style="font-size: 11px; color: var(--muted); display: block;">500 units · due 28 Oct</span>
+                  </div>
+                  <span class="font-mono text-cobalt" style="font-weight: 700;">40%</span>
+                </div>
+                <div class="wo-progress-bar-wrap">
+                  <div class="wo-progress-fill" style="width: 40%;"></div>
+                </div>
+              </div>
+
+              <div class="wo-card">
+                <div class="wo-header">
+                  <div>
+                    <span class="wo-name">WO-0873 · Sheet-metal enclosure</span>
+                    <span style="font-size: 11px; color: var(--muted); display: block;">120 units · due 2 Nov</span>
+                  </div>
+                  <span class="badge badge-amber" style="font-size: 9.5px; padding: 2px 6px;">Waiting for material</span>
+                </div>
+                <div class="wo-progress-bar-wrap">
+                  <div class="wo-progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pnl-bank-status" style="background: var(--cobalt-soft); border-color: rgba(47, 91, 255, 0.2);">
+              <span style="color: var(--cobalt); font-weight: 600;">MRP suggests: purchase 180 kg CRCA sheet by 26 Oct</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 6: HR & Payroll (Reversed) -->
+        <div class="product-module-row reversed" id="hr-payroll">
+          <div class="product-row-copy">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+              <img src="/assets/icon-people.svg" alt="HR" width="20" height="20" />
+              <span class="section-eyebrow" style="margin-bottom: 0;">HR &amp; PAYROLL</span>
+            </div>
+            <h2 class="product-row-title">Payroll done right, every month.</h2>
+            <p class="product-row-desc">
+              Attendance and leave flow straight into payroll, with statutory deductions calculated for you and payslips sent automatically.
+            </p>
+            <ul class="feature-checklist">
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Attendance, shifts and leave management</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>PF, ESI, professional tax and TDS</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Payslips and Form 16 for every employee</span>
+              </li>
+              <li class="feature-check-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Employee self-service on mobile</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Payroll Card Mockup -->
+          <div class="product-ui-card">
+            <div class="product-ui-header">
+              <div class="product-ui-title-wrap">
+                <img src="/assets/icon-people.svg" alt="Payroll" width="18" height="18" />
+                <span class="product-ui-title">Payroll · October 2026 · 86 employees</span>
+              </div>
+              <span class="badge badge-amber">Ready to approve</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="payroll-table">
+                <thead>
+                  <tr>
+                    <th style="font-family: var(--font-mono); font-size: 10px; color: var(--faint); text-transform: uppercase; padding: 4px 0; text-align: left;">COMPONENT</th>
+                    <th style="font-family: var(--font-mono); font-size: 10px; color: var(--faint); text-transform: uppercase; padding: 4px 0; text-align: right;">AMOUNT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Gross salary</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹42,18,000</td>
+                  </tr>
+                  <tr>
+                    <td>Provident fund (employee)</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹3,12,400</td>
+                  </tr>
+                  <tr>
+                    <td>ESI (employee)</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹48,900</td>
+                  </tr>
+                  <tr>
+                    <td>Professional tax</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹17,200</td>
+                  </tr>
+                  <tr>
+                    <td>TDS on salary</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹2,86,100</td>
+                  </tr>
+                  <tr class="total-salary">
+                    <td>Net pay</td>
+                    <td style="text-align: right; font-family: var(--font-mono);">₹35,53,400</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--line);">
+              <span style="font-size: 12px; color: var(--muted);">Payslips are emailed on approval</span>
+              <button class="btn btn-primary btn-sm" type="button">
+                Approve &amp; pay
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Foundation Section -->
+    <section class="section section-surface" id="platform">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-eyebrow">THE PLATFORM</span>
+          <h2 class="section-title">Built on a foundation you can trust.</h2>
+          <p class="section-desc">
+            The things you don't see matter most: security, access control and data you can always reach.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card card-hover">
+            <div class="module-icon-box">
+              <img src="/assets/icon-lock.svg" alt="Access" width="24" height="24" />
+            </div>
+            <h3 class="module-card-title">Role-based access</h3>
+            <p class="module-card-desc">
+              Decide who can view, create and approve — down to each branch, warehouse and document type.
+            </p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="module-icon-box">
+              <img src="/assets/icon-mobile.svg" alt="Mobile" width="24" height="24" />
+            </div>
+            <h3 class="module-card-title">Mobile app</h3>
+            <p class="module-card-desc">
+              Approve purchase orders, check stock and share invoices from the VyxAntix app for Android and iOS.
+            </p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="module-icon-box">
+              <img src="/assets/icon-bolt.svg" alt="Reports" width="24" height="24" />
+            </div>
+            <h3 class="module-card-title">Live reports &amp; dashboards</h3>
+            <p class="module-card-desc">
+              Ready-made reports for finance, stock and sales, plus custom dashboards for every team.
+            </p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="module-icon-box">
+              <img src="/assets/icon-plug.svg" alt="Integrations" width="24" height="24" />
+            </div>
+            <h3 class="module-card-title">Integrations &amp; API</h3>
+            <p class="module-card-desc">
+              Connect payment gateways, e-commerce stores and your own systems through our REST API and webhooks.
+            </p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="module-icon-box">
+              <img src="/assets/icon-shield.svg" alt="Security" width="24" height="24" />
+            </div>
+            <h3 class="module-card-title">Security &amp; backups</h3>
+            <p class="module-card-desc">
+              Encrypted in transit and at rest, hosted on servers in India, with daily backups kept for 30 days.
+            </p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="module-icon-box">
+              <img src="/assets/icon-branch.svg" alt="Multi-branch" width="24" height="24" />
+            </div>
+            <h3 class="module-card-title">Multi-branch &amp; multi-GSTIN</h3>
+            <p class="module-card-desc">
+              Run several companies, branches, GSTINs and warehouses from a single login.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner-content">
+            <h2 class="cta-banner-title">See VyxAntix with your own data.</h2>
+            <p class="cta-banner-sub">
+              Start your 14-day free trial — no credit card required. Or book a 30-minute demo and we'll walk you through VyxAntix with your own workflows.
+            </p>
+            <div class="cta-banner-actions">
+              <a href="/contact.html" class="btn btn-primary btn-lg">
+                Start free trial
+                <span class="btn-arrow">→</span>
+              </a>
+              <a href="/contact.html" class="btn btn-white btn-lg">
+                Book a demo
+                <span class="btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="/assets/logo-horizontal-on-dark.svg" alt="VyxAntix" width="188" height="47" />
+          </a>
+          <p class="footer-slogan">
+            Cloud ERP for growing Indian businesses. Accounting, inventory, sales, purchase, manufacturing and payroll — connected.
+          </p>
+          <div class="footer-badges">
+            <span class="badge badge-dark-outline">GST READY</span>
+            <span class="badge badge-dark-outline">HOSTED IN INDIA</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">PRODUCT</h4>
+          <ul class="footer-links">
+            <li><a href="/product.html#finance" class="footer-link">Finance &amp; Accounting</a></li>
+            <li><a href="/product.html#inventory" class="footer-link">Inventory &amp; Warehouse</a></li>
+            <li><a href="/product.html#sales" class="footer-link">Sales &amp; CRM</a></li>
+            <li><a href="/product.html#purchase" class="footer-link">Purchase &amp; Procurement</a></li>
+            <li><a href="/product.html#manufacturing" class="footer-link">Manufacturing</a></li>
+            <li><a href="/product.html#hr-payroll" class="footer-link">HR &amp; Payroll</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">COMPANY</h4>
+          <ul class="footer-links">
+            <li><a href="/pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="/contact.html" class="footer-link">Book a demo</a></li>
+            <li><a href="/contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">GET IN TOUCH</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:sales@vyxantix.in" class="footer-link">sales@vyxantix.in</a></li>
+            <li><a href="mailto:support@vyxantix.in" class="footer-link">support@vyxantix.in</a></li>
+            <li><a href="mailto:partners@vyxantix.in" class="footer-link">partners@vyxantix.in</a></li>
+          </ul>
+          <div class="footer-hours">
+            Mon–Sat · 9 AM–7 PM IST
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 VyxAntix. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy.html">Privacy policy</a>
+          <span>·</span>
+          <a href="/terms.html">Terms of service</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/company/vyxantix" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="https://x.com/vyxantix" target="_blank" rel="noopener noreferrer">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>

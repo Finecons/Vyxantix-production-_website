@@ -1,0 +1,999 @@
+/* ==========================================================================
+   VyxAntix Realistic UI Mockups
+   Recreated in clean, crisp, responsive HTML & CSS
+   ========================================================================== */
+
+/* Browser Mockup Frame */
+.browser-frame {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 24px 64px rgba(11, 26, 58, 0.12);
+  overflow: hidden;
+  max-width: 1080px;
+  margin: 40px auto 0;
+  transition: transform var(--transition-smooth);
+}
+
+.browser-header {
+  background: #F1F4F9;
+  border-bottom: 1px solid var(--line);
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.browser-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-pill);
+}
+
+.dot-red { background: #FF5F56; }
+.dot-yellow { background: #FFBD2E; }
+.dot-green { background: #27C93F; }
+
+.browser-address-bar {
+  flex: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.browser-address-bar svg {
+  width: 12px;
+  height: 12px;
+  color: var(--faint);
+}
+
+/* ERP Dashboard Layout */
+.erp-dashboard {
+  display: flex;
+  min-height: 580px;
+  background: #FAFCFE;
+}
+
+/* Sidebar */
+.erp-sidebar {
+  width: 220px;
+  background: var(--navy);
+  color: var(--white);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.erp-sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.erp-sidebar-logo img {
+  height: 24px;
+}
+
+.erp-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.erp-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.erp-menu-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--white);
+}
+
+.erp-menu-item.active {
+  background: var(--cobalt);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.erp-menu-item svg {
+  width: 16px;
+  height: 16px;
+}
+
+.erp-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.erp-avatar-si {
+  width: 32px;
+  height: 32px;
+  background: var(--amber);
+  color: var(--navy);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.erp-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.erp-user-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.erp-user-sub {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Dashboard Content Area */
+.erp-content {
+  flex: 1;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
+}
+
+.erp-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.erp-search {
+  flex: 1;
+  max-width: 380px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--placeholder);
+}
+
+.erp-search svg {
+  width: 14px;
+  height: 14px;
+  color: var(--faint);
+}
+
+.erp-top-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.erp-avatar-as {
+  width: 30px;
+  height: 30px;
+  background: var(--cobalt);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.erp-greeting h4 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.erp-greeting p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Dashboard KPI Cards Grid */
+.erp-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.erp-kpi-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.erp-kpi-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.erp-kpi-value {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.erp-kpi-badge {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.erp-kpi-badge.badge-green { background: var(--green-soft); color: var(--green); }
+.erp-kpi-badge.badge-amber { background: var(--amber-soft); color: var(--amber-text); }
+.erp-kpi-badge.badge-blue { background: var(--cobalt-soft); color: var(--cobalt); }
+
+/* Charts & Alerts Row */
+.erp-middle-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1.1fr;
+  gap: 16px;
+}
+
+.erp-chart-panel,
+.erp-alerts-panel {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.panel-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.panel-sub {
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+/* CSS Bar Chart */
+.chart-bars-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 110px;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--line);
+  gap: 12px;
+}
+
+.chart-bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.chart-bar-pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 90px;
+}
+
+.bar-sales {
+  width: 10px;
+  background: var(--cobalt);
+  border-radius: 3px 3px 0 0;
+}
+
+.bar-purchase {
+  width: 10px;
+  background: #A3B5FF;
+  border-radius: 3px 3px 0 0;
+}
+
+.chart-month {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.chart-legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+/* Low Stock Alerts List */
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alert-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  background: var(--surface);
+  border-radius: 6px;
+  font-size: 11.5px;
+}
+
+.alert-item-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.alert-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--amber);
+}
+
+.alert-item-name {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.alert-item-qty {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+/* Recent Invoices Table */
+.erp-invoices-panel {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.mockup-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+}
+
+.mockup-table th {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.mockup-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+}
+
+.mockup-table tr:last-child td {
+  border-bottom: none;
+}
+
+.badge-status {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.badge-status.paid {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.badge-status.pending {
+  background: var(--amber-soft);
+  color: var(--amber-text);
+}
+
+/* ==========================================================================
+   Tax Invoice Mockup (Home Page)
+   ========================================================================== */
+
+.tax-invoice-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.invoice-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+
+.invoice-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.invoice-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.invoice-number {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--navy);
+}
+
+.invoice-parties-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.party-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.party-label {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--faint);
+  text-transform: uppercase;
+}
+
+.party-name {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.party-gstin {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.invoice-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.invoice-items-table th {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.invoice-items-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.invoice-calc-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+  font-size: 12.5px;
+}
+
+.calc-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+}
+
+.calc-row.total-row {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--navy);
+  margin-top: 4px;
+}
+
+.invoice-qr-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.invoice-qr-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 4px;
+  border: 1px solid var(--line);
+}
+
+.invoice-ack-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.invoice-whatsapp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--green);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   Product Page UI Cards
+   ========================================================================== */
+
+.product-ui-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+  width: 100%;
+}
+
+.product-ui-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.product-ui-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-ui-title-wrap svg {
+  color: var(--cobalt);
+  width: 18px;
+  height: 18px;
+}
+
+.product-ui-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* P&L Mockup */
+.pnl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.pnl-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.pnl-table tr.pnl-bold td {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.pnl-table tr.pnl-profit td {
+  font-weight: 800;
+  color: var(--green);
+}
+
+.pnl-bank-status {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Stock Summary Mockup */
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.stock-table th {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--faint);
+  text-transform: uppercase;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.stock-table td {
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Deal Pipeline Kanban */
+.kanban-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.kanban-col {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kanban-col-title {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.kanban-item-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: var(--shadow-sm);
+}
+
+.kanban-company {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.kanban-amount {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--cobalt);
+}
+
+/* PO Approval Timeline */
+.po-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.timeline-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.step-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 10px;
+}
+
+.step-circle.done {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.step-circle.amber {
+  background: var(--amber-soft);
+  color: var(--amber-text);
+}
+
+.step-circle.pending {
+  border: 2px dashed var(--line-strong);
+}
+
+.step-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.step-info-title {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.step-info-sub {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Production Orders */
+.work-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.wo-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.wo-name {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.wo-progress-bar-wrap {
+  width: 100%;
+  height: 6px;
+  background: var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.wo-progress-fill {
+  height: 100%;
+  background: var(--cobalt);
+  border-radius: 3px;
+}
+
+/* Payroll Mockup */
+.payroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  margin-bottom: 16px;
+}
+
+.payroll-table td {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.payroll-table tr.total-salary td {
+  font-weight: 800;
+  color: var(--cobalt);
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   Responsive Mockups (Tablet & Mobile & Monitor)
+   ========================================================================== */
+
+/* Tablet & Smaller Laptops (<= 960px) */
+@media (max-width: 960px) {
+  .erp-sidebar {
+    display: none;
+  }
+  .erp-content {
+    padding: 20px 16px;
+  }
+  .erp-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .erp-middle-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .kanban-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* Mobile Screens (<= 640px) */
+@media (max-width: 640px) {
+  .browser-frame {
+    margin-top: 24px;
+    border-radius: 16px;
+  }
+  .browser-header {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .browser-address-bar {
+    font-size: 10.5px;
+    padding: 3px 8px;
+  }
+  .erp-content {
+    padding: 16px 12px;
+    gap: 16px;
+  }
+  .erp-topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .erp-search {
+    max-width: 100%;
+  }
+  .erp-top-user {
+    justify-content: flex-end;
+  }
+  .chart-bars-wrap {
+    gap: 6px;
+  }
+  .bar-sales,
+  .bar-purchase {
+    width: 8px;
+  }
+  .chart-month {
+    font-size: 9.5px;
+  }
+  .alert-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .tax-invoice-card {
+    padding: 20px 16px;
+  }
+  .invoice-parties-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .invoice-qr-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .product-ui-card {
+    padding: 20px 16px;
+  }
+  .pnl-table,
+  .stock-table,
+  .payroll-table,
+  .mockup-table {
+    min-width: 440px;
+  }
+}
+
+/* Small Mobile Screens (<= 400px) */
+@media (max-width: 400px) {
+  .erp-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+  .bar-sales,
+  .bar-purchase {
+    width: 6px;
+  }
+  .chart-bars-wrap {
+    gap: 4px;
+  }
+}
+
